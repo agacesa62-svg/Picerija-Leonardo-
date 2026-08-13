@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="sr">
 <head>
@@ -8,11 +7,10 @@
 <title>Picerija Leonardo | Odžaci</title>
 
 <style>
-
 *{
+    box-sizing:border-box;
     margin:0;
     padding:0;
-    box-sizing:border-box;
 }
 
 html{
@@ -21,11 +19,9 @@ html{
 
 body{
     font-family:Arial, sans-serif;
-    background:#fffaf4;
-    color:#241711;
+    background:#fff8ef;
+    color:#24140d;
 }
-
-/* HEADER */
 
 header{
     position:fixed;
@@ -33,14 +29,13 @@ header{
     left:0;
     width:100%;
     z-index:1000;
-    background:rgba(25,15,10,.95);
-    backdrop-filter:blur(10px);
+    background:rgba(20,12,8,.96);
 }
 
 nav{
-    max-width:1150px;
+    max-width:1100px;
     margin:auto;
-    padding:16px 20px;
+    padding:15px 20px;
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -53,60 +48,56 @@ nav{
 }
 
 .logo span{
-    color:#f0a33b;
+    color:#f3a63d;
 }
 
 nav a{
     color:white;
     text-decoration:none;
-    margin-left:20px;
+    margin-left:18px;
     font-weight:bold;
 }
 
-/* HERO */
-
 .hero{
     min-height:100vh;
-    padding:120px 20px 60px;
+    padding:130px 20px 70px;
     display:flex;
-    align-items:center;
     justify-content:center;
+    align-items:center;
     text-align:center;
     color:white;
-
     background:
-    linear-gradient(rgba(30,16,9,.7),rgba(30,16,9,.85)),
-    linear-gradient(135deg,#8d4724,#32170c);
+    linear-gradient(rgba(30,15,8,.65),rgba(30,15,8,.88)),
+    url("IMG_0363.jpeg") center/cover;
 }
 
 .hero-content{
-    max-width:850px;
+    max-width:800px;
 }
 
 .badge{
     display:inline-block;
-    padding:9px 16px;
-    border:1px solid rgba(255,255,255,.4);
+    padding:9px 17px;
+    border:1px solid rgba(255,255,255,.5);
     border-radius:30px;
     margin-bottom:20px;
 }
 
 .hero h1{
     font-size:clamp(55px,10vw,95px);
-    margin-bottom:5px;
+    font-weight:900;
 }
 
 .hero h2{
-    color:#ffc76c;
-    font-size:clamp(25px,4vw,36px);
-    margin-bottom:20px;
+    color:#ffc66b;
+    font-size:32px;
+    margin:8px 0 20px;
 }
 
 .hero p{
     font-size:19px;
-    line-height:1.7;
-    max-width:650px;
-    margin:auto auto 30px;
+    line-height:1.6;
+    margin-bottom:28px;
 }
 
 .buttons{
@@ -117,23 +108,22 @@ nav a{
 }
 
 .btn{
+    display:inline-block;
     padding:15px 24px;
     border-radius:10px;
     text-decoration:none;
-    font-weight:800;
+    font-weight:bold;
 }
 
 .primary{
-    background:#efa43d;
-    color:#25170f;
+    background:#f2a43c;
+    color:#201209;
 }
 
 .secondary{
     border:1px solid white;
     color:white;
 }
-
-/* SECTIONS */
 
 section{
     max-width:1150px;
@@ -149,11 +139,9 @@ section h2{
 
 .subtitle{
     text-align:center;
-    color:#76665b;
-    margin-bottom:40px;
+    color:#77675d;
+    margin-bottom:35px;
 }
-
-/* CARDS */
 
 .cards{
     display:grid;
@@ -166,44 +154,40 @@ section h2{
     padding:30px;
     border-radius:20px;
     text-align:center;
-    box-shadow:0 8px 30px rgba(0,0,0,.08);
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
 }
 
-.card .icon{
-    font-size:48px;
+.icon{
+    font-size:45px;
     margin-bottom:15px;
 }
 
 .card h3{
-    font-size:23px;
+    font-size:22px;
     margin-bottom:10px;
 }
 
-/* MENU */
-
-.menu-grid{
+.menu{
     display:grid;
     grid-template-columns:repeat(2,1fr);
-    gap:18px;
+    gap:16px;
 }
 
 .menu-item{
     background:white;
     padding:22px;
-    border-radius:16px;
+    border-radius:15px;
     display:flex;
     justify-content:space-between;
-    gap:20px;
-    box-shadow:0 5px 20px rgba(0,0,0,.06);
+    gap:15px;
+    box-shadow:0 5px 18px rgba(0,0,0,.06);
 }
 
 .price{
-    color:#d98220;
+    color:#d47d1c;
     font-weight:bold;
     white-space:nowrap;
 }
-
-/* GALLERY */
 
 .gallery{
     display:grid;
@@ -211,33 +195,28 @@ section h2{
     gap:15px;
 }
 
-.photo{
-    height:240px;
-    border-radius:20px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-size:65px;
-    background:linear-gradient(135deg,#8e4925,#d59a49);
+.gallery img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:18px;
+    display:block;
+    box-shadow:0 6px 20px rgba(0,0,0,.12);
 }
 
-/* RATING */
-
-.rating-box{
-    background:#251711;
+.rating{
+    background:#25150d;
     color:white;
     border-radius:22px;
     padding:40px;
     text-align:center;
 }
 
-.rating{
+.rating-number{
     font-size:55px;
+    color:#f3a63d;
     font-weight:900;
-    color:#f0a43d;
 }
-
-/* CONTACT */
 
 .contact{
     display:grid;
@@ -246,7 +225,7 @@ section h2{
 }
 
 .contact-box{
-    background:#251711;
+    background:#25150d;
     color:white;
     padding:35px;
     border-radius:22px;
@@ -258,24 +237,22 @@ section h2{
 }
 
 .contact-box a{
-    color:#ffc96d;
+    color:#ffc66b;
 }
 
 .map{
     background:#eadfd1;
     border-radius:22px;
+    min-height:280px;
     display:flex;
     justify-content:center;
     align-items:center;
     text-align:center;
-    min-height:280px;
 }
 
 .map-icon{
     font-size:60px;
 }
-
-/* FOOTER */
 
 footer{
     background:#17100c;
@@ -283,8 +260,6 @@ footer{
     text-align:center;
     padding:35px 20px;
 }
-
-/* MOBILE */
 
 @media(max-width:750px){
 
@@ -296,7 +271,7 @@ footer{
         grid-template-columns:1fr;
     }
 
-    .menu-grid{
+    .menu{
         grid-template-columns:1fr;
     }
 
@@ -304,23 +279,20 @@ footer{
         grid-template-columns:1fr 1fr;
     }
 
-    .contact{
-        grid-template-columns:1fr;
-    }
-
-    .photo{
+    .gallery img{
         height:180px;
     }
 
+    .contact{
+        grid-template-columns:1fr;
+    }
 }
-
 </style>
 </head>
 
 <body>
 
 <header>
-
 <nav>
 
 <div class="logo">
@@ -335,11 +307,7 @@ LEONARDO <span>🍕</span>
 </div>
 
 </nav>
-
 </header>
-
-
-<!-- HERO -->
 
 <section class="hero">
 
@@ -361,13 +329,11 @@ i dobroj atmosferi.
 
 <div class="buttons">
 
-<a class="btn primary"
-href="tel:+381637714708">
+<a class="btn primary" href="tel:+381637714708">
 📞 POZOVI I PORUČI
 </a>
 
-<a class="btn secondary"
-href="#meni">
+<a class="btn secondary" href="#meni">
 🍕 POGLEDAJ MENI
 </a>
 
@@ -377,63 +343,36 @@ href="#meni">
 
 </section>
 
-
-<!-- PONUDA -->
-
 <section id="ponuda">
 
 <h2>Za svakoga po nešto</h2>
 
 <p class="subtitle">
-Uživajte kod nas, ponesite obrok ili poručite dostavu.
+Obrok u lokalu, hrana za poneti ili dostava.
 </p>
 
 <div class="cards">
 
 <div class="card">
-
 <div class="icon">🍕</div>
-
 <h3>Obrok u lokalu</h3>
-
-<p>
-Opustite se i uživajte u prijatnom ambijentu.
-</p>
-
+<p>Uživajte u prijatnom ambijentu.</p>
 </div>
 
-
 <div class="card">
-
 <div class="icon">🥡</div>
-
 <h3>Hrana za poneti</h3>
-
-<p>
-Vaš omiljeni obrok spreman za poneti.
-</p>
-
+<p>Vaš omiljeni obrok spreman za poneti.</p>
 </div>
-
 
 <div class="card">
-
 <div class="icon">🚗</div>
-
 <h3>Dostava</h3>
-
-<p>
-Pozovite nas i raspitajte se za dostavu.
-</p>
-
+<p>Pozovite nas i raspitajte se za dostavu.</p>
 </div>
 
 </div>
-
 </section>
-
-
-<!-- MENI -->
 
 <section id="meni">
 
@@ -443,50 +382,154 @@ Pozovite nas i raspitajte se za dostavu.
 Izaberite svoj omiljeni obrok.
 </p>
 
-<div class="menu-grid">
+<div class="menu">
 
 <div class="menu-item">
 <div>
-<b>Pice</b>
-<br>
+<b>Pice</b><br>
 <small>Različite vrste pizza</small>
 </div>
 <div class="price">od 500 RSD</div>
 </div>
 
-
 <div class="menu-item">
 <div>
-<b>Paste</b>
-<br>
+<b>Paste</b><br>
 <small>Ukusne testenine</small>
 </div>
 <div class="price">—</div>
 </div>
 
-
 <div class="menu-item">
 <div>
-<b>Salate</b>
-<br>
+<b>Salate</b><br>
 <small>Sveže salate</small>
 </div>
 <div class="price">—</div>
 </div>
 
-
 <div class="menu-item">
 <div>
-<b>Palačinke</b>
-<br>
+<b>Palačinke</b><br>
 <small>Slane i slatke</small>
 </div>
 <div class="price">—</div>
 </div>
 
+<div class="menu-item">
+<div>
+<b>Prilozi</b><br>
+<small>Dodaci po želji</small>
+</div>
+<div class="price">—</div>
+</div>
 
 <div class="menu-item">
 <div>
-<b>Prilozi</b>
-<br>
-<small>Dodaci po
+<b>Piće</b><br>
+<small>Osveženje uz obrok</small>
+</div>
+<div class="price">—</div>
+</div>
+
+</div>
+</section>
+
+<section id="galerija">
+
+<h2>📸 Galerija</h2>
+
+<p class="subtitle">
+Pogledajte naše fotografije.
+</p>
+
+<div class="gallery">
+
+<img src="IMG_0363.jpeg" alt="Picerija Leonardo">
+<img src="IMG_0364.jpeg" alt="Picerija Leonardo">
+<img src="IMG_0365.jpeg" alt="Picerija Leonardo">
+<img src="IMG_0366.jpeg" alt="Picerija Leonardo">
+<img src="IMG_0367.jpeg" alt="Picerija Leonardo">
+
+</div>
+
+</section>
+
+<section>
+
+<div class="rating">
+
+<div class="rating-number">
+4,4 ⭐
+</div>
+
+<h2>Naši gosti nas vole</h2>
+
+<p>656 recenzija</p>
+
+</div>
+
+</section>
+
+<section id="kontakt">
+
+<h2>📍 Posetite nas</h2>
+
+<p class="subtitle">
+Čekamo vas u Odžacima!
+</p>
+
+<div class="contact">
+
+<div class="contact-box">
+
+<h2>Picerija Leonardo 🍕</h2>
+
+<p>
+📍 Školska 11<br>
+25250 Odžaci
+</p>
+
+<p>
+📞 <a href="tel:+381637714708">
+063 771 4708
+</a>
+</p>
+
+<p>🍽️ Obrok u lokalu</p>
+<p>🥡 Hrana za poneti</p>
+<p>🚗 Dostava</p>
+
+<a class="btn primary" href="tel:+381637714708">
+POZOVI ODMAH
+</a>
+
+</div>
+
+<div class="map">
+
+<div>
+
+<div class="map-icon">📍</div>
+
+<h3>Školska 11, Odžaci</h3>
+
+<p>G735+QJ Odžaci</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Picerija Leonardo • Odžaci
+
+</footer>
+
+</body>
+</html>
+
